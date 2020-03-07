@@ -1,6 +1,6 @@
 require "sample_gem/version"
 
-module SampleGem
+class SampleGem
   SAMPLE_CONST='これはサンプルです'
 
   class << self
