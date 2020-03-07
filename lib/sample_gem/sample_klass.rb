@@ -1,4 +1,4 @@
-require "sample_gem/sample_klass"
+require "sample_gem/no_integer_error"
 
 module SampleGem
   class SampleKlass
