@@ -1,23 +1,5 @@
-class SampleGem
-  SAMPLE_CONST='これはサンプルです'
+require "sample_gem/version"
+require "sample_gem/sample_klass"
 
-  class << self
-    def increment(num)
-      raise NoIntegerError unless num == num.to_i
-
-      num + 1
-    end
-
-    def sample_const
-      SAMPLE_CONST
-    end
-  end
-
-  def increment(num)
-    raise NoIntegerError unless num == num.to_i
-
-    num += 1
-  end
-
-  class NoIntegerError < StandardError; end
+module SampleGem
 end
