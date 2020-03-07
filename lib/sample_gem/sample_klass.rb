@@ -1,5 +1,3 @@
-require "sample_gem/no_integer_error"
-
 module SampleGem
   class SampleKlass
     SAMPLE_CONST='これはサンプルです'
