@@ -15,14 +15,10 @@ module SampleGem
     end
   end
 
-  def initialize(num)
-    @num = num
-  end
-
-  def increment
+  def increment(num)
     raise NoIntegerError unless num == num.to_i
 
-    @num += 1
+    num += 1
   end
 
   class NoIntegerError < StandardError; end
