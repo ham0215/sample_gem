@@ -1,5 +1,3 @@
-require "sample_gem/version"
-
 class SampleGem
   SAMPLE_CONST='これはサンプルです'
 
