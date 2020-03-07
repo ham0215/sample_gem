@@ -1,3 +1,5 @@
+require "sample_gem/sample_klass"
+
 module SampleGem
   class SampleKlass
     SAMPLE_CONST='これはサンプルです'
