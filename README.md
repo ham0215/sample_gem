@@ -82,3 +82,9 @@ Initializing git repo in /app/sample_gem
 Gem 'sample_gem' was successfully created. For more information on making a RubyGem visit https://bundler.io/guides/creating_gem.html
 
 ```
+
+# test
+
+```
+docker-compose gem bundle exec rspec
+```

@@ -13,6 +13,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 RUN gem update bundler
+RUN bundle install
 COPY . .
 
 CMD ["tail", "-f", "/dev/null"]

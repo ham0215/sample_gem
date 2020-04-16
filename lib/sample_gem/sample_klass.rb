@@ -2,6 +2,8 @@ module SampleGem
   class SampleKlass
     SAMPLE_CONST='これはサンプルです'
 
+    attr_reader :num
+
     class << self
       def increment(num)
         raise SampleGem::NoIntegerError unless num == num.to_i
@@ -14,10 +16,14 @@ module SampleGem
       end
     end
 
-    def increment(num)
+    def initialize(num)
       raise SampleGem::NoIntegerError unless num == num.to_i
 
-      num += 1
+      @num = num.to_i
+    end
+
+    def increment
+      @num += 1
     end
   end
 end
